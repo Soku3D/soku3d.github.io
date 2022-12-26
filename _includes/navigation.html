@@ -1,5 +1,5 @@
 <nav>
   {% for data in site.data.navigation %}
-  <a href="{{data.link}}" {% if page.url==data.link%}style="color:blue;"{%endif%}>{{data.name}}</a>
+  <a href="{{data.link}}" {% if page.url == data.link %}class="current"{%endif%}>{{data.name}}</a>
   {%endfor%}
 </nav>
