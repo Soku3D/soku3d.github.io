@@ -1,1 +1,5 @@
-<nav><a href="/">home</a> <a href="/about.html">about</a></nav>
+<nav>
+  {% for data in site.data.navigation %}
+  <a href="{{data.link}}" {% if page.url==data.link%}style="color:blue;"{%endif%}>{{data.name}}</a>
+  {%endfor%}
+</nav>
