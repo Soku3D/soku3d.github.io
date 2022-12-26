@@ -1,8 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-26T16:22:34+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">First</title><link href="http://localhost:4000/2022/12/26/first.html" rel="alternate" type="text/html" title="First" /><published>2022-12-26T00:00:00+09:00</published><updated>2022-12-26T00:00:00+09:00</updated><id>http://localhost:4000/2022/12/26/first</id><content type="html" xml:base="http://localhost:4000/2022/12/26/first.html"><![CDATA[<p>A banana is an edible fruit – botanically a berry – produced by several kinds
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-26T17:33:16+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Second</title><link href="http://localhost:4000/2022/12/26/second.html" rel="alternate" type="text/html" title="Second" /><published>2022-12-26T00:00:00+09:00</published><updated>2022-12-26T00:00:00+09:00</updated><id>http://localhost:4000/2022/12/26/second</id><content type="html" xml:base="http://localhost:4000/2022/12/26/second.html"><![CDATA[<p>A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.</p>
 
 <p>In some countries, bananas used for cooking may be called “plantains”,
 distinguishing them from dessert bananas. The fruit is variable in size, color,
 and firmness, but is usually elongated and curved, with soft flesh rich in
 starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.</p>]]></content><author><name>jill</name></author><summary type="html"><![CDATA[A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.]]></summary></entry></feed>
+when ripe.</p>]]></content><author><name></name></author><category term="ddd" /><summary type="html"><![CDATA[A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.]]></summary></entry><entry><title type="html">Cccwrite</title><link href="http://localhost:4000/2022/12/26/cccwrite.html" rel="alternate" type="text/html" title="Cccwrite" /><published>2022-12-26T00:00:00+09:00</published><updated>2022-12-26T00:00:00+09:00</updated><id>http://localhost:4000/2022/12/26/cccwrite</id><content type="html" xml:base="http://localhost:4000/2022/12/26/cccwrite.html"><![CDATA[<p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants in the genus Musa.</p>
+
+<p>In some countries, bananas used for cooking may be called “plantains”,
+distinguishing them from dessert bananas. The fruit is variable in size, color,
+and firmness, but is usually elongated and curved, with soft flesh rich in
+starch covered with a rind, which may be green, yellow, red, purple, or brown
+when ripe.</p>]]></content><author><name></name></author><category term="ccc" /><summary type="html"><![CDATA[A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.]]></summary></entry><entry><title type="html">Dddwrite</title><link href="http://localhost:4000/2022/12/26/dddwrite.html" rel="alternate" type="text/html" title="Dddwrite" /><published>2022-12-26T00:00:00+09:00</published><updated>2022-12-26T00:00:00+09:00</updated><id>http://localhost:4000/2022/12/26/dddwrite</id><content type="html" xml:base="http://localhost:4000/2022/12/26/dddwrite.html"><![CDATA[<p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants in the genus Musa.</p>
+
+<p>In some countries, bananas used for cooking may be called “plantains”,
+distinguishing them from dessert bananas. The fruit is variable in size, color,
+and firmness, but is usually elongated and curved, with soft flesh rich in
+starch covered with a rind, which may be green, yellow, red, purple, or brown
+when ripe.</p>]]></content><author><name></name></author><category term="ddd" /><summary type="html"><![CDATA[A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.]]></summary></entry><entry><title type="html">First</title><link href="http://localhost:4000/2022/12/26/first.html" rel="alternate" type="text/html" title="First" /><published>2022-12-26T00:00:00+09:00</published><updated>2022-12-26T00:00:00+09:00</updated><id>http://localhost:4000/2022/12/26/first</id><content type="html" xml:base="http://localhost:4000/2022/12/26/first.html"><![CDATA[<p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants in the genus Musa.</p>
+
+<p>In some countries, bananas used for cooking may be called “plantains”,
+distinguishing them from dessert bananas. The fruit is variable in size, color,
+and firmness, but is usually elongated and curved, with soft flesh rich in
+starch covered with a rind, which may be green, yellow, red, purple, or brown
+when ripe.</p>]]></content><author><name></name></author><category term="ccc" /><summary type="html"><![CDATA[A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.]]></summary></entry></feed>
