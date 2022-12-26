@@ -1,6 +1,6 @@
-- tagName: home
-  link: /
-- tagName: ccc
-  link: /ccc.html
-- tagName: ddd
-  link: /ddd.html
+- name: Algorithms
+  link: /Algorithms
+- name: 3D
+  link: /3D
+- name: AI
+  link: /AI

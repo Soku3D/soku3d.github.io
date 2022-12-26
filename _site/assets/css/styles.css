@@ -1,5 +1,9 @@
+#home {
+  color: blue;
+}
+
 .current {
-  color: green;
+  color: red;
 }
 
 /*# sourceMappingURL=styles.css.map */
