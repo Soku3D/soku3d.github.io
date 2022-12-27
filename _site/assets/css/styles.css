@@ -6,4 +6,22 @@
   color: red;
 }
 
+body {
+  width: 1080px;
+  margin: auto;
+}
+
+.top-nav {
+  height: 50px;
+}
+
+.top-nav a {
+  display: inline-block;
+  margin: auto;
+}
+
+.top {
+  height: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */

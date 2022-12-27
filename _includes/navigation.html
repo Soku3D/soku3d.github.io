@@ -1,5 +1,6 @@
-<nav>
+<div class="top"></div>
+<nav class="top-nav">
     {% for site in site.data.navigation %}
-    <a href={{site.link}} {% if site.link== "/" %} id="home" {% endif %}{% if site.link== page.link %} class="current" {% endif %}>{{site.name}}</a>
+    <a href={{site.link}} {% if site.link== "/" %} id="home" {% endif %}{% if site.link== page.link %} class="current" {% endif %}><div>{{site.name}}</div></a>
     {%endfor%}
-</nav>
+</nav><hr>

@@ -1,8 +1,8 @@
 - name: Home
   link: /
 - name: Algorithms
-  link: /Algorithms
+  link: /tag/Algorithms
 - name: 3D
-  link: /3D
+  link: /tag/3D
 - name: AI
-  link: AI
+  link: /tag/AI
