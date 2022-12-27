@@ -4,9 +4,5 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }}</p>
-<script>
-  var timeStr = {{page.time}};
-  document.write(timeStr);
-</script>
 
 {{ content }}
