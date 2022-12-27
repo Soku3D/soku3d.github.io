@@ -2,11 +2,11 @@
   link: /
   img: /img/Home.png
 - name: Algorithms
-  link: /tag/Algorithms
+  link: /tag/Algorithms.html
   img: /img/Algorithms.png
 - name: 3D
-  link: /tag/3D
+  link: /tag/3D.html
   img: /img/3D.png
 - name: AI
-  link: /tag/AI
+  link: /tag/AI.html
   img: /img/AI.png
