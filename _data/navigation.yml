@@ -1,8 +1,12 @@
 - name: Home
   link: /
+  img: /img/Home.png
 - name: Algorithms
   link: /tag/Algorithms
+  img: /img/Algorithms.png
 - name: 3D
   link: /tag/3D
+  img: /img/3D.png
 - name: AI
   link: /tag/AI
+  img: /img/AI.png

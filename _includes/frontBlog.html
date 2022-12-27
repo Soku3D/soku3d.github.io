@@ -1,0 +1,5 @@
+{% for data in site.data.navigation %} {% if data.name==page.title %}
+<div class="frontImg">
+  <div><img src="{{data.img}}" /></div>
+</div>
+{%endif%} {%endfor%}

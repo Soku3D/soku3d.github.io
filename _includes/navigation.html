@@ -1,6 +1,10 @@
 <div class="top"></div>
 <nav class="top-nav">
-    {% for site in site.data.navigation %}
-    <a href={{site.link}} {% if site.link== "/" %} id="home" {% endif %}{% if site.link== page.link %} class="current" {% endif %}><div>{{site.name}}</div></a>
-    {%endfor%}
+    <div class="topNavContent">
+        {% for site in site.data.navigation %}
+        <div>
+            <a href={{site.link}} {% if site.link== "/" %} id="home" {% endif %}{% if site.link== page.link %} class="current" {% endif %}>{{site.name}}</a>
+        </div>
+        {%endfor%}
+    </div>
 </nav><hr>

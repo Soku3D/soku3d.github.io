@@ -1,7 +1,3 @@
-#home {
-  color: blue;
-}
-
 .current {
   color: red;
 }
@@ -13,15 +9,36 @@ body {
 
 .top-nav {
   height: 50px;
+  font-family: "Inria Serif", serif;
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.top-nav a {
-  display: inline-block;
-  margin: auto;
+.top-nav div a {
+  text-decoration: none;
+}
+
+.top-nav div a:visited {
+  color: black;
 }
 
 .top {
   height: 20px;
+}
+
+.topNavContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.topNavContent > div {
+  margin: 4px;
+}
+
+.frontImg {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
