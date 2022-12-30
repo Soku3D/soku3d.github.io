@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+- name: Algorithms
+  link: /Category/Algorithms.html
+  img: /img/3D.png
+- name: 3D
+  link: /Category/3D.html
+  img: /img/3D.png
+- name: AI
+  link: /Category/AI.html
+  img: /img/AI.png
+- name: JS
+  link: /Category/JS.html
+  img: /img/JS.png

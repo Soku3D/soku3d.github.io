@@ -42,4 +42,12 @@ body {
   color: red !important;
 }
 
+.menu a {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

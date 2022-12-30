@@ -1,7 +1,7 @@
 <!--post에서 tag별로 분류하기 위한 include 파일-->
-<div class="tagList">
+<div class="categoryList">
   <ul>
-    {% for post in site.posts %} {% if post.tag==page.title %}
+    {% for post in site.posts %} {% if post.category==page.title %}
     <div>
       <li>
         <a href="{{post.url}}">{{post.title}}</a>

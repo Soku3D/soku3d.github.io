@@ -1,12 +1,12 @@
 - name: Home
   link: /
   img: /img/Home.png
-- name: Algorithms
-  link: /tag/Algorithms.html
-  img: /img/Algorithms.png
-- name: 3D
-  link: /tag/3D.html
-  img: /img/3D.png
-- name: AI
-  link: /tag/AI.html
-  img: /img/AI.png
+- name: Category
+  link: /Category.html
+  img: /img/Category.png
+- name: Tag
+  link: /Tag.html
+  img: /img/Tag.png
+- name: about
+  link: /about.html
+  img: /img/about.png

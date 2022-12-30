@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta lang="ko" />
+    <title>Jquery활용</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /> <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Jquery활용</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Jquery활용" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="메뉴1 메뉴1-1 메뉴1-2 메뉴1-3 메뉴1-4 메뉴1-5 메뉴1-6 메뉴2 메뉴2-1 메뉴2-2 메뉴2-3 메뉴2-4 메뉴2-5 메뉴2-6" />
+<meta property="og:description" content="메뉴1 메뉴1-1 메뉴1-2 메뉴1-3 메뉴1-4 메뉴1-5 메뉴1-6 메뉴2 메뉴2-1 메뉴2-2 메뉴2-3 메뉴2-4 메뉴2-5 메뉴2-6" />
+<link rel="canonical" href="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html" />
+<meta property="og:url" content="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-30T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Jquery활용" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-30T00:00:00+09:00","datePublished":"2022-12-30T00:00:00+09:00","description":"메뉴1 메뉴1-1 메뉴1-2 메뉴1-3 메뉴1-4 메뉴1-5 메뉴1-6 메뉴2 메뉴2-1 메뉴2-2 메뉴2-3 메뉴2-4 메뉴2-5 메뉴2-6","headline":"Jquery활용","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html"},"url":"http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div class="top"></div>
+<nav class="top-nav">
+    <div class="topNavContent">
+        
+        <div class="menu">
+            <a href="/"  id="home"  >Home</a>
+            
+        </div>
+        
+        <div class="menu">
+            <a href="/Category.html"  >Category</a>
+            
+        </div>
+        
+        <div class="menu">
+            <a href="/Tag.html"  >Tag</a>
+            
+        </div>
+        
+        <div class="menu">
+            <a href="/about.html"  >about</a>
+            
+        </div>
+        
+    </div>
+</nav><hr>         
+
+    <h1>Jquery활용</h1>
+    <p>30 Dec 2022</p>
+
+    <html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .hide{
+        display:none;
+      }
+      .menu a{
+        cursor:pointer;
+      }
+    </style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".menu>a").click(function(){
+          $(this).next("ul").toggleClass("hide");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+    <ul>
+        <li class="menu">
+            <a>메뉴1</a>
+            <ul class="hide">
+                <li>메뉴1-1</li>
+                <li>메뉴1-2</li>
+                <li>메뉴1-3</li>
+                <li>메뉴1-4</li>
+                <li>메뉴1-5</li>
+                <li>메뉴1-6</li>
+            </ul>
+        </li>
+ 
+        <li class="menu">
+            <a>메뉴2</a>
+            <ul class="hide">
+                <li>메뉴2-1</li>
+                <li>메뉴2-2</li>
+                <li>메뉴2-3</li>
+                <li>메뉴2-4</li>
+                <li>메뉴2-5</li>
+                <li>메뉴2-6</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+  </body>
+</html>
+
+  </body>
+</html>
