@@ -2,7 +2,7 @@
   link: /
   img: /img/Home.png
 - name: Category
-  link: /Category.html
+  link: /category.html
   img: /img/Category.png
 - name: Tag
   link: /Tag.html
