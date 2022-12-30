@@ -1,14 +1,14 @@
 - name: Home
   link: /
 - name: Algorithms
-  link: /Category/Algorithms.html
+  link: /category/Algorithms.html
   img: /img/3D.png
 - name: 3D
-  link: /Category/3D.html
+  link: /category/3D.html
   img: /img/3D.png
 - name: AI
-  link: /Category/AI.html
+  link: /category/AI.html
   img: /img/AI.png
 - name: JS
-  link: /Category/JS.html
+  link: /category/JS.html
   img: /img/JS.png
