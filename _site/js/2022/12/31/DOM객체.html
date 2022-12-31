@@ -10,6 +10,8 @@
 <meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Dom객체" />
 <meta property="og:locale" content="en_US" />
+<meta name="description" content="DOM 객체란" />
+<meta property="og:description" content="DOM 객체란" />
 <link rel="canonical" href="http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html" />
 <meta property="og:url" content="http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html" />
 <meta property="og:type" content="article" />
@@ -17,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Dom객체" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-31T00:00:00+09:00","datePublished":"2022-12-31T00:00:00+09:00","headline":"Dom객체","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html"},"url":"http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-31T00:00:00+09:00","datePublished":"2022-12-31T00:00:00+09:00","description":"DOM 객체란","headline":"Dom객체","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html"},"url":"http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -26,23 +28,23 @@
 <nav class="top-nav">
     <div class="topNavContent">
         
-        <div>
+        <div name="Home">
             <a href=/  id="home"  >Home</a>
         </div>
         
-        <div>
+        <div name="Algorithms">
             <a href=/category/Algorithms.html  >Algorithms</a>
         </div>
         
-        <div>
+        <div name="3D">
             <a href=/category/3D.html  >3D</a>
         </div>
         
-        <div>
+        <div name="AI">
             <a href=/category/AI.html  >AI</a>
         </div>
         
-        <div>
+        <div name="JS">
             <a href=/category/JS.html   class="current" >JS</a>
         </div>
         
@@ -52,15 +54,51 @@
     <h1>Dom객체</h1>
     <p style="text-align: end">31 Dec 2022</p>
 
-    <html>
+    <h2 id="dom-객체란">DOM 객체란</h2>
+
+<p>DOM 은 Document Object Model의 줄임말로 HTML 문서의 각 요소들을 객체화 시킨 모델을 의미한다.
+<br /></p>
+
+<h2 id="dom의-특징">DOM의 특징</h2>
+
+<ul>
+  <li>
+    <p>DOM 트리의 루트는 document 객체이다. 하지만 document 객체는 DOM객체가 아니다.</p>
+  </li>
+  <li>
+    <p>HTML 태가 당 DOM 객체가 하나씩 생성된다.
+즉 같은 태그가 여러 개 생기면 DOM 객체도 따라서 생기게 된다.</p>
+  </li>
+</ul>
+
+<h2 id="dom-객체의-구성요소">DOM 객체의 구성요소</h2>
+
+<html>
     <head>
-    <script>
-        
-    </script>
+        <script>
+            function changeColor(obj){
+                var objTextColor = obj.style.color;
+                if(objTextColor=="red")
+                {
+                    obj.style.color="blue";
+                }
+                else
+                {
+                    obj.style.color="red";
+                }
+            }
+        </script>
     </head>
     <body>
-        
+        <h2> 예제 8-1.DOM 객체의 구조 출력</h2><hr />
+        <p id="myP" style="color:red" background="yellow" onclick="changeColor(this)">Inner<span class="Myspan" style="color:teal">Html</span></p>
+        <script>
+            var MyPtag = document.getElementsByClassName('Myspan').item(0);
+            alert(MyPtag.tagName);
+
+        </script>
     </body>
+
 </html>
 
   </body>

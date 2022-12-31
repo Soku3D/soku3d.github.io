@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-31T16:49:44+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Js6장</title><link href="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html" rel="alternate" type="text/html" title="Js6장" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/js6%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html"><![CDATA[<html>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-31T18:19:05+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Js6장</title><link href="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html" rel="alternate" type="text/html" title="Js6장" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/js6%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html"><![CDATA[<html>
     <head>
     <script>
         function over(obj){
@@ -29,16 +29,52 @@
             document.write(adder(str_1,str_2)); 
         </script>
     </body>
-</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[6장공부 예제 6-1) 이벤트 리스너 속성에 자바스크립트 코드 작성 예제 6-1) script코드에 작성 예제 6-22) adder 함수 사용]]></summary></entry><entry><title type="html">Dom객체</title><link href="http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html" rel="alternate" type="text/html" title="Dom객체" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html"><![CDATA[<html>
+</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[6장공부 예제 6-1) 이벤트 리스너 속성에 자바스크립트 코드 작성 예제 6-1) script코드에 작성 예제 6-22) adder 함수 사용]]></summary></entry><entry><title type="html">Dom객체</title><link href="http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html" rel="alternate" type="text/html" title="Dom객체" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html"><![CDATA[<h2 id="dom-객체란">DOM 객체란</h2>
+
+<p>DOM 은 Document Object Model의 줄임말로 HTML 문서의 각 요소들을 객체화 시킨 모델을 의미한다.
+<br /></p>
+
+<h2 id="dom의-특징">DOM의 특징</h2>
+
+<ul>
+  <li>
+    <p>DOM 트리의 루트는 document 객체이다. 하지만 document 객체는 DOM객체가 아니다.</p>
+  </li>
+  <li>
+    <p>HTML 태가 당 DOM 객체가 하나씩 생성된다.
+즉 같은 태그가 여러 개 생기면 DOM 객체도 따라서 생기게 된다.</p>
+  </li>
+</ul>
+
+<h2 id="dom-객체의-구성요소">DOM 객체의 구성요소</h2>
+
+<html>
     <head>
-    <script>
-        
-    </script>
+        <script>
+            function changeColor(obj){
+                var objTextColor = obj.style.color;
+                if(objTextColor=="red")
+                {
+                    obj.style.color="blue";
+                }
+                else
+                {
+                    obj.style.color="red";
+                }
+            }
+        </script>
     </head>
     <body>
-        
+        <h2> 예제 8-1.DOM 객체의 구조 출력</h2><hr />
+        <p id="myP" style="color:red" background="yellow" onclick="changeColor(this)">Inner<span class="Myspan" style="color:teal">Html</span></p>
+        <script>
+            var MyPtag = document.getElementsByClassName('Myspan').item(0);
+            alert(MyPtag.tagName);
+
+        </script>
     </body>
-</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Jquery활용</title><link href="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Jquery활용" /><published>2022-12-30T00:00:00+09:00</published><updated>2022-12-30T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html"><![CDATA[<html lang="ko">
+
+</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[DOM 객체란]]></summary></entry><entry><title type="html">Jquery활용</title><link href="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Jquery활용" /><published>2022-12-30T00:00:00+09:00</published><updated>2022-12-30T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html"><![CDATA[<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <style>

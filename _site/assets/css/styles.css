@@ -35,7 +35,24 @@ body {
 
 .frontImg {
   display: flex;
+  position: relative !important;
   justify-content: center;
+  z-index: 10;
+}
+
+#subnav {
+  z-index: 100;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin-top: 17px;
+  background-color: white;
+}
+
+.subnavli {
+  padding: 10px;
+  border: 1px solid;
+  border-collapse: collapse;
 }
 
 .current {
@@ -49,5 +66,3 @@ body {
 .hide {
   display: none;
 }
-
-/*# sourceMappingURL=styles.css.map */

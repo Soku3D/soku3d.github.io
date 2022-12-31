@@ -4,6 +4,7 @@
 - name: Category
   link: /category.html
   img: /img/Category.png
+  list: [Algorithms, 3D]
 - name: Tag
   link: /Tag.html
   img: /img/Tag.png

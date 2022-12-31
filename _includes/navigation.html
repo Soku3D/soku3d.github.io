@@ -4,7 +4,11 @@
         {% for site in site.data.navigation %}
         <div class="menu">
             <a href="{{site.link}}" {% if site.link== "/" %} id="home" {% endif %} {% if site.link == page.url %} class="current" {% endif %}>{{site.name}}</a>
-            
+            <ul id="subnav" class="hide">
+                {% for sublist in site.list %}
+                <li class="subnavli" style="font-size: 0.8em; font-weight: 50;">{{sublist}}</li>
+                {% endfor %}
+            </ul>
         </div>
         {%endfor%}
     </div>
