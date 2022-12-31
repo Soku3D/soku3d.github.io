@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-30T20:58:25+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Jquery활용</title><link href="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Jquery활용" /><published>2022-12-30T00:00:00+09:00</published><updated>2022-12-30T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html"><![CDATA[<html lang="ko">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-31T16:38:06+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Js6장</title><link href="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html" rel="alternate" type="text/html" title="Js6장" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/js6%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html"><![CDATA[<html>
+    <head>
+    <script>
+        function over(obj){
+            obj.src = "/img/AI.png"
+        }
+        function out(obj){
+            obj.src = "/img/3d.png"
+        }
+        function adder(a, b){
+            var sum;
+            sum= a+b
+            return sum;
+        }
+    </script>
+    </head>
+    <body>
+        <h2>
+            6장공부
+        </h2>
+        <h3>예제 6-1) 이벤트 리스너 속성에 자바스크립트 코드 작성</h3><hr />
+        <img src="/img/3D.png" alt="image" onmouseover="this.src='/img/AI.png'" onmouseout="this.src='/img/3D.png'" />
+        <h3>예제 6-1) script코드에 작성</h3><hr />
+        <img src="/img/3D.png" alt="img" onmouseover="over(this)" onmouseout="out(this)" />
+        <h3>예제 6-22) adder 함수 사용</h3><hr />
+        <script>
+            var str_1 = "hi ";
+            var str_2 = "hello";
+            document.write(adder(str_1,str_2)); 
+        </script>
+    </body>
+</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[6장공부 예제 6-1) 이벤트 리스너 속성에 자바스크립트 코드 작성 예제 6-1) script코드에 작성 예제 6-22) adder 함수 사용]]></summary></entry><entry><title type="html">Dom객체</title><link href="http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html" rel="alternate" type="text/html" title="Dom객체" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html"><![CDATA[<html>
+    <head>
+    <script>
+        
+    </script>
+    </head>
+    <body>
+        
+    </body>
+</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Jquery활용</title><link href="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Jquery활용" /><published>2022-12-30T00:00:00+09:00</published><updated>2022-12-30T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html"><![CDATA[<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <style>
