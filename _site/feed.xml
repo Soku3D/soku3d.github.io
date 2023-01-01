@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-01T17:48:34+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Dom객체활용</title><link href="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Dom객체활용" /><published>2023-01-01T00:00:00+09:00</published><updated>2023-01-01T00:00:00+09:00</updated><id>http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html"><![CDATA[<html>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-02T00:42:06+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Animation Test</title><link href="http://localhost:4000/graphic/2023/01/01/animation-test.html" rel="alternate" type="text/html" title="Animation Test" /><published>2023-01-01T00:00:00+09:00</published><updated>2023-01-01T00:00:00+09:00</updated><id>http://localhost:4000/graphic/2023/01/01/animation-test</id><content type="html" xml:base="http://localhost:4000/graphic/2023/01/01/animation-test.html"><![CDATA[<html>
+  <head>
+  </head>
+  <body>
+    <div style="display:inline-block" class="rotate">rotate</div>
+    <script>
+        anime({
+      targets: '.rotate',
+      translateX: 250,
+      rotate: '1turn',
+      backgroundColor: 'rgb(100, 215, 155)',
+      loop:true,
+      duration: 1800
+      });
+      
+    </script>
+
+  </body>
+</html>]]></content><author><name></name></author><category term="Graphic" /><summary type="html"><![CDATA[rotate]]></summary></entry><entry><title type="html">Dom객체활용</title><link href="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Dom객체활용" /><published>2023-01-01T00:00:00+09:00</published><updated>2023-01-01T00:00:00+09:00</updated><id>http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html"><![CDATA[<html>
     <head>
         <script>
             var div;

@@ -2,10 +2,10 @@
   link: /
 - name: Algorithms
   link: /category/Algorithms.html
-  img: /img/3D.png
-- name: 3D
-  link: /category/3D.html
-  img: /img/3D.png
+  img: /img/Algorithms.png
+- name: Graphic
+  link: /category/Graphic.html
+  img: /img/Graphic.png
 - name: AI
   link: /category/AI.html
   img: /img/AI.png

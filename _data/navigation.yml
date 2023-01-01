@@ -4,10 +4,11 @@
 - name: Category
   link: /category.html
   img: /img/Category.png
-  list: [Algorithms, 3D]
+  list: [Algorithms, Graphic]
 - name: Tag
   link: /Tag.html
   img: /img/Tag.png
+  list: [Animation, study]
 - name: about
   link: /about.html
   img: /img/about.png
