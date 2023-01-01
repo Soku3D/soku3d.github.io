@@ -1,4 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-31T18:19:05+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Js6장</title><link href="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html" rel="alternate" type="text/html" title="Js6장" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/js6%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html"><![CDATA[<html>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-01T17:44:57+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Dom객체활용</title><link href="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Dom객체활용" /><published>2023-01-01T00:00:00+09:00</published><updated>2023-01-01T00:00:00+09:00</updated><id>http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html"><![CDATA[<html>
+    <head>
+        <script>
+            var div;
+            var left, center, right;
+            var bt, p;
+            function init()
+            {
+                bt = document.getElementById("clickbt");
+                p = document.getElementById("onp");
+                div = document.getElementById("divId");
+                left = document.getElementsByName("select").item(0);
+                center = document.getElementsByName("select").item(1);
+                right = document.getElementsByName("select").item(2);
+                left.onchange = lChange;
+                center.onchange = cChange;
+                right.onchange = rChange;
+                div.onmouseover = on;
+                div.onmouseout =out;
+                p.onmouseover = f;
+            }
+            function on(){
+                div.style.background = "white";
+            }
+            function out(){
+                div.style.background = "blue";
+            }
+            function lChange(){
+                div.style.margin = "0px 0px";
+            }
+            function cChange(){
+                div.style.margin = "auto";
+            }
+            function rChange(){
+                div.style.margin = "0 0 0 70%";
+            }
+            function query(){
+                var ret = confirm("이동하시겠습니까?");
+                return ret;
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <h2> 예제 8장) </h2><hr />
+        <div class="divClass" id="divId" style="margin:auto; background:blue; color:red; display: flex; justify-content:center ; width: 30%;">이것은 <span>InnerHtml이다</span></div><br />
+        <form style="display: flex;justify-content:center">
+            <input type="text" id="input" /><button type="button">확인</button>
+        </form>
+        <form style="display: flex;justify-content:center">
+            <input type="radio" name="select" value="left" />왼쪽정렬
+            <input type="radio" name="select" value="center" />가운데정렬
+            <input type="radio" name="select" value="right" />오른쪽정렬
+        </form>
+        <script>
+            function print(){
+                document.getElementById("input").focus();
+                var text = document.location;
+                alert(text);
+            }
+        </script>
+        <script>
+            var divElement = document.getElementById("divId");
+            var text = "div태그의 background style : "+divElement.style.background;
+            text+= "<br>div태그의 InnerHtml : "+ divElement.innerHTML;
+            text+= "<br>"+ divElement.offsetTop;
+            document.write(text);
+        </script><br />
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <h2> 예제 9-5) </h2><hr />
+        <p id="onp" style="display:inline-block">마우스를 올려보세요</p>
+        <button id="clickbt" type="button" onclick="ff">클릭해보세요</button>
+        <script>
+            function f(e){
+              document.getElementById("clickbt").style.color="red";
+            }
+            function ff(){
+                document.getElementById("clickbt").style.color="black";
+            }
+        </script>
+        <h2> 예제 9-7) </h2><hr />
+        <a href="http://soku3d.github.io" onclick="return query()">HOME</a><br /><br />
+        <form>
+            <input type="radio" onclick="return false" />1번 (선택 불가능)
+            <input type="radio" />2번 (선택 가능)
+            <input type="radio" onclick="event.preventDefault()" />3번 (선택 불가능)
+        </form>
+        <h2> 예제 9-8) event propagation</h2><hr />
+        <div id="divevent" style="color:purple"></div><button id="eb" type="button">클릭 해보세요</button>
+        <script>
+            var diva = document.getElementById("divevent");
+            var button = document.getElementById("eb");
+            document.body.addEventListener("click", capture, true); 
+            button.addEventListener("click", bubble, false); 
+            document.body.addEventListener("click", bubble, false);
+            function bubble(e){
+                diva.innerHTML += e.currentTarget.tagName+": bubble<br>";
+            }
+             function capture(e){
+                diva.innerHTML += e.currentTarget.tagName +": capture<br>";
+            }
+        </script>
+    </body>
+
+</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[예제 8장) 이것은 InnerHtml이다 확인 왼쪽정렬 가운데정렬 오른쪽정렬 1 2 3 예제 9-5) 마우스를 올려보세요 클릭해보세요 예제 9-7) HOME 1번 (선택 불가능) 2번 (선택 가능) 3번 (선택 불가능) 예제 9-8) event propagation 클릭 해보세요]]></summary></entry><entry><title type="html">Js6장</title><link href="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html" rel="alternate" type="text/html" title="Js6장" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/js6%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html"><![CDATA[<html>
     <head>
     <script>
         function over(obj){
@@ -67,10 +174,8 @@
     <body>
         <h2> 예제 8-1.DOM 객체의 구조 출력</h2><hr />
         <p id="myP" style="color:red" background="yellow" onclick="changeColor(this)">Inner<span class="Myspan" style="color:teal">Html</span></p>
+        <h2> list </h2><hr />
         <script>
-            var MyPtag = document.getElementsByClassName('Myspan').item(0);
-            alert(MyPtag.tagName);
-
         </script>
     </body>
 

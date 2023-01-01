@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta lang="ko" />
+    <title>Dom객체활용</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /> <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Dom객체활용</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Dom객체활용" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="예제 8장) 이것은 InnerHtml이다 확인 왼쪽정렬 가운데정렬 오른쪽정렬 1 2 3 예제 9-5) 마우스를 올려보세요 클릭해보세요 예제 9-7) HOME 1번 (선택 불가능) 2번 (선택 가능) 3번 (선택 불가능) 예제 9-8) event propagation 클릭 해보세요" />
+<meta property="og:description" content="예제 8장) 이것은 InnerHtml이다 확인 왼쪽정렬 가운데정렬 오른쪽정렬 1 2 3 예제 9-5) 마우스를 올려보세요 클릭해보세요 예제 9-7) HOME 1번 (선택 불가능) 2번 (선택 가능) 3번 (선택 불가능) 예제 9-8) event propagation 클릭 해보세요" />
+<link rel="canonical" href="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html" />
+<meta property="og:url" content="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-01-01T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Dom객체활용" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-01T00:00:00+09:00","datePublished":"2023-01-01T00:00:00+09:00","description":"예제 8장) 이것은 InnerHtml이다 확인 왼쪽정렬 가운데정렬 오른쪽정렬 1 2 3 예제 9-5) 마우스를 올려보세요 클릭해보세요 예제 9-7) HOME 1번 (선택 불가능) 2번 (선택 가능) 3번 (선택 불가능) 예제 9-8) event propagation 클릭 해보세요","headline":"Dom객체활용","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html"},"url":"http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div class="top"></div>
+<nav class="top-nav">
+    <div class="topNavContent">
+        
+        <div name="Home">
+            <a href=/  id="home"  >Home</a>
+        </div>
+        
+        <div name="Algorithms">
+            <a href=/category/Algorithms.html  >Algorithms</a>
+        </div>
+        
+        <div name="3D">
+            <a href=/category/3D.html  >3D</a>
+        </div>
+        
+        <div name="AI">
+            <a href=/category/AI.html  >AI</a>
+        </div>
+        
+        <div name="JS">
+            <a href=/category/JS.html   class="current" >JS</a>
+        </div>
+        
+    </div>
+</nav><hr>         
+
+    <h1>Dom객체활용</h1>
+    <p style="text-align: end">01 Jan 2023</p>
+
+    <html>
+    <head>
+        <script>
+            var div;
+            var left, center, right;
+            var bt, p;
+            function init()
+            {
+                bt = document.getElementById("clickbt");
+                p = document.getElementById("onp");
+                div = document.getElementById("divId");
+                left = document.getElementsByName("select").item(0);
+                center = document.getElementsByName("select").item(1);
+                right = document.getElementsByName("select").item(2);
+                left.onchange = lChange;
+                center.onchange = cChange;
+                right.onchange = rChange;
+                div.onmouseover = on;
+                div.onmouseout =out;
+                p.onmouseover = f;
+            }
+            function on(){
+                div.style.background = "white";
+            }
+            function out(){
+                div.style.background = "blue";
+            }
+            function lChange(){
+                div.style.margin = "0px 0px";
+            }
+            function cChange(){
+                div.style.margin = "auto";
+            }
+            function rChange(){
+                div.style.margin = "0 0 0 70%";
+            }
+            function query(){
+                var ret = confirm("이동하시겠습니까?");
+                return ret;
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <h2> 예제 8장) </h2><hr />
+        <div class="divClass" id="divId" style="margin:auto; background:blue; color:red; display: flex; justify-content:center ; width: 30%;">이것은 <span>InnerHtml이다</span></div><br />
+        <form style="display: flex;justify-content:center">
+            <input type="text" id="input" /><button type="button">확인</button>
+        </form>
+        <form style="display: flex;justify-content:center">
+            <input type="radio" name="select" value="left" />왼쪽정렬
+            <input type="radio" name="select" value="center" />가운데정렬
+            <input type="radio" name="select" value="right" />오른쪽정렬
+        </form>
+        <script>
+            function print(){
+                document.getElementById("input").focus();
+                var text = document.location;
+                alert(text);
+            }
+        </script>
+        <script>
+            var divElement = document.getElementById("divId");
+            var text = "div태그의 background style : "+divElement.style.background;
+            text+= "<br>div태그의 InnerHtml : "+ divElement.innerHTML;
+            text+= "<br>"+ divElement.offsetTop;
+            document.write(text);
+        </script><br />
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <h2> 예제 9-5) </h2><hr />
+        <p id="onp" style="display:inline-block">마우스를 올려보세요</p>
+        <button id="clickbt" type="button" onclick="ff">클릭해보세요</button>
+        <script>
+            function f(e){
+              document.getElementById("clickbt").style.color="red";
+            }
+            function ff(){
+                document.getElementById("clickbt").style.color="black";
+            }
+        </script>
+        <h2> 예제 9-7) </h2><hr />
+        <a href="http://soku3d.github.io" onclick="return query()">HOME</a><br /><br />
+        <form>
+            <input type="radio" onclick="return false" />1번 (선택 불가능)
+            <input type="radio" />2번 (선택 가능)
+            <input type="radio" onclick="event.preventDefault()" />3번 (선택 불가능)
+        </form>
+        <h2> 예제 9-8) event propagation</h2><hr />
+        <div id="divevent" style="color:purple"></div><button id="eb" type="button">클릭 해보세요</button>
+        <script>
+            var diva = document.getElementById("divevent");
+            var button = document.getElementById("eb");
+            document.body.addEventListener("click", capture, true); 
+            button.addEventListener("click", bubble, false); 
+            document.body.addEventListener("click", bubble, false);
+            function bubble(e){
+                diva.innerHTML += e.currentTarget.tagName+": bubble<br>";
+            }
+             function capture(e){
+                diva.innerHTML += e.currentTarget.tagName +": capture<br>";
+            }
+        </script>
+    </body>
+
+</html>
+
+  </body>
+</html>
