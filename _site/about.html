@@ -5,6 +5,7 @@
     <meta lang="ko" />
     <title>about</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="/assets/lib/anime/anime.min.js"></script>
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /> <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>about</title>
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -63,11 +64,43 @@
         
     </div>
 </nav><hr>        
-<div class="frontImg">
-  <div><img src="/img/about.png" /></div>
+
+<div class="frontBlog">
+  <div class="front-content">
+    <div class="targetc"></div>
+    <svg viewBox="0 0 340 333" width="300" height="300" class="view">
+      <path
+        class="path"
+        fill="white"
+        stroke="black"
+        stroke-width="4"
+        d="M66.039,133.545c0,0-21-57,18-67s49-4,65,8
+    s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41
+    C46.039,146.545,53.039,128.545,66.039,133.545z"
+      />
+    </svg>
+  </div>
 </div>
+<script>
+  var path = anime.path(".path");
+
+  anime({
+    targets: ".targetc",
+    translateX: path("x"),
+    translateY: path("y"),
+    rotate: path("angle"),
+    easing: "linear",
+    duration: 11000,
+  });
+</script>
  
- <p>hello</p>
+ <html>
+    <head>
+        <script src="https://gist.github.com/Soku3D/f08fc9de2581403c0107bf59ca7a0759.js"></script>
+    </head>
+    <body>
+    </body>
+</html>
 
   </body>
 </html>

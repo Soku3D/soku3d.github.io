@@ -56,3 +56,22 @@ body {
 .hide {
   display: none;
 }
+.targetc {
+  background: red;
+  position: relative;
+  width: 13px;
+  height: 13px;
+  z-index: 11;
+}
+.view {
+  position: relative;
+  z-index: 8;
+}
+.frontBlog {
+  height: 300px;
+}
+.front-content {
+  justify-content: center;
+  height: 300px;
+  display: flex;
+}
