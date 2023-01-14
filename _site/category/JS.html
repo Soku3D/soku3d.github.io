@@ -5,6 +5,7 @@
     <meta lang="ko" />
     <title>JS</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="/assets/lib/anime/anime.min.js"></script>
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /> <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>JS</title>
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -51,32 +52,71 @@
 <div class="categoryList">
   <ul>
        
-    <div>
-      <li>
-        <h2><a href="/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html">Dom객체활용</a></h2>
+    <div class="Listdiv">
+      <li class="postlist">
+        <div class="PostLink"><a class="link" href="/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html">Dom객체활용</a></div>
+        <div class="anime_line" ></div>
+        <div class="PostDate">2023-01-01</div>
       </li>
     </div>
       
-    <div>
-      <li>
-        <h2><a href="/js/2022/12/31/js6%EC%9E%A5.html">Js6장</a></h2>
+    <div class="Listdiv">
+      <li class="postlist">
+        <div class="PostLink"><a class="link" href="/js/2022/12/31/js6%EC%9E%A5.html">Js6장</a></div>
+        <div class="anime_line" ></div>
+        <div class="PostDate">2022-12-31</div>
       </li>
     </div>
       
-    <div>
-      <li>
-        <h2><a href="/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html">Dom객체</a></h2>
+    <div class="Listdiv">
+      <li class="postlist">
+        <div class="PostLink"><a class="link" href="/js/2022/12/31/DOM%EA%B0%9D%EC%B2%B4.html">Dom객체</a></div>
+        <div class="anime_line" ></div>
+        <div class="PostDate">2022-12-31</div>
       </li>
     </div>
       
-    <div>
-      <li>
-        <h2><a href="/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html">Jquery활용</a></h2>
+    <div class="Listdiv">
+      <li class="postlist">
+        <div class="PostLink"><a class="link" href="/js/2022/12/30/jquery%ED%99%9C%EC%9A%A9.html">Jquery활용</a></div>
+        <div class="anime_line" ></div>
+        <div class="PostDate">2022-12-30</div>
       </li>
     </div>
          
   </ul>
 </div>
+<script>
+  var linklist = document.getElementsByClassName('link');
+var animelist = document.getElementsByClassName('anime_line');
+
+function animateImage(i, w) {
+  	animelist[i].style.background = 'gray'
+    anime({
+        targets: animelist[i],
+        width: [0, w],
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        loop: true
+    });
+}
+
+function enterLink(i) {
+  var linkwidth = linklist[i].parentElement.clientWidth;
+  animateImage(i, linkwidth);
+  
+}
+
+function leaveLink(i) {
+  anime.remove(animelist[i]);
+  animelist[i].style.background = 'white';   
+}
+
+for (var i = 0; i < linklist.length; i++) {
+    linklist[i].addEventListener('mouseenter', enterLink.bind(null, i), false);
+    linklist[i].addEventListener('mouseleave', leaveLink.bind(null, i), false);
+}
+</script>
 
 
   </body>

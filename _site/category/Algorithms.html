@@ -5,6 +5,7 @@
     <meta lang="ko" />
     <title>Algorithms</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="/assets/lib/anime/anime.min.js"></script>
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /> <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Algorithms</title>
 <meta name="generator" content="Jekyll v4.3.1" />
@@ -51,14 +52,47 @@
 <div class="categoryList">
   <ul>
                
-    <div>
-      <li>
-        <h2><a href="/algorithms/2022/12/27/fourier.html">Fourier</a></h2>
+    <div class="Listdiv">
+      <li class="postlist">
+        <div class="PostLink"><a class="link" href="/algorithms/2022/12/27/fourier.html">Fourier</a></div>
+        <div class="anime_line" ></div>
+        <div class="PostDate">2022-12-27</div>
       </li>
     </div>
        
   </ul>
 </div>
+<script>
+  var linklist = document.getElementsByClassName('link');
+var animelist = document.getElementsByClassName('anime_line');
+
+function animateImage(i, w) {
+  	animelist[i].style.background = 'gray'
+    anime({
+        targets: animelist[i],
+        width: [0, w],
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        loop: true
+    });
+}
+
+function enterLink(i) {
+  var linkwidth = linklist[i].parentElement.clientWidth;
+  animateImage(i, linkwidth);
+  
+}
+
+function leaveLink(i) {
+  anime.remove(animelist[i]);
+  animelist[i].style.background = 'white';   
+}
+
+for (var i = 0; i < linklist.length; i++) {
+    linklist[i].addEventListener('mouseenter', enterLink.bind(null, i), false);
+    linklist[i].addEventListener('mouseleave', leaveLink.bind(null, i), false);
+}
+</script>
 
 
   </body>

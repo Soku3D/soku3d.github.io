@@ -6,6 +6,19 @@
     <title>{{page.title}}</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <script src="/assets/lib/anime/anime.min.js"></script>
+    <script>
+      function playAnime(){
+        var elements = document.querySelectorAll('.anime_line');
+        anime({
+      targets: elements,
+      width: '100%', // -> from '28px' to '100%',
+      easing: 'easeInOutQuad',
+      direction: 'alternate',
+      loop: true
+    });
+      }
+      
+    </script>
     {% feed_meta %} {% seo %}
   </head>
   <body>

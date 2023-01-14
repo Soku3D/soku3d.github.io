@@ -2,11 +2,44 @@
 <div class="categoryList">
   <ul>
     {% for post in site.posts %} {% if post.category==page.title %}
-    <div>
-      <li>
-        <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+    <div class="Listdiv">
+      <li class="postlist">
+        <div class="PostLink"><a class="link" href="{{post.url}}">{{post.title}}</a></div>
+        <div class="anime_line" ></div>
+        <div class="PostDate">{{ post.date | | date: "%Y-%m-%d"}}</div>
       </li>
     </div>
     {% endif %} {% endfor %}
   </ul>
 </div>
+<script>
+  var linklist = document.getElementsByClassName('link');
+var animelist = document.getElementsByClassName('anime_line');
+
+function animateImage(i, w) {
+  	animelist[i].style.background = 'gray'
+    anime({
+        targets: animelist[i],
+        width: [0, w],
+        easing: 'easeInOutQuad',
+        direction: 'alternate',
+        loop: true
+    });
+}
+
+function enterLink(i) {
+  var linkwidth = linklist[i].parentElement.clientWidth;
+  animateImage(i, linkwidth);
+  
+}
+
+function leaveLink(i) {
+  anime.remove(animelist[i]);
+  animelist[i].style.background = 'white';   
+}
+
+for (var i = 0; i < linklist.length; i++) {
+    linklist[i].addEventListener('mouseenter', enterLink.bind(null, i), false);
+    linklist[i].addEventListener('mouseleave', leaveLink.bind(null, i), false);
+}
+</script>
