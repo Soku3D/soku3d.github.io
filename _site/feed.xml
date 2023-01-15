@@ -1,28 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-14T22:15:57+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">anime.js 활용</title><link href="http://localhost:4000/js/2023/01/14/anime.js-%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="anime.js 활용" /><published>2023-01-14T00:00:00+09:00</published><updated>2023-01-14T00:00:00+09:00</updated><id>http://localhost:4000/js/2023/01/14/anime.js%20%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2023/01/14/anime.js-%ED%99%9C%EC%9A%A9.html"><![CDATA[<div style="background:red; width:100%; height:100px; display:inline-block">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-15T22:09:49+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">UWP 앱 만들기(1)</title><link href="http://localhost:4000/app/2023/01/15/UWP-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0(1).html" rel="alternate" type="text/html" title="UWP 앱 만들기(1)" /><published>2023-01-15T00:00:00+09:00</published><updated>2023-01-15T00:00:00+09:00</updated><id>http://localhost:4000/app/2023/01/15/UWP%20%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0(1)</id><content type="html" xml:base="http://localhost:4000/app/2023/01/15/UWP-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0(1).html"><![CDATA[<h1 id="uwp란">UWP란?</h1>
+
+<p><a href="https://learn.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide">What’s a Universal Windows Platform (UWP) app?</a></p>
+
+<blockquote>
+  <p>마이크로 소프트가 제공하는 문서에 따르면 유니버설 윈도우즈 플랫폼 앱이란 WinRT API를 사용하여 UI와 고급 비동기 기능을 제공한다고 합니다.</p>
+</blockquote>
+
+<p><a href="https://learn.microsoft.com/en-us/cpp/build/creating-precompiled-header-files?view=msvc-170">미리 컴파일 된 헤더파일</a></p>
+
+<h2>Fibonacci Generator</h2>
+<p>Here is my example of a Fibonacci generator implemented in C#.</p>
+
+<iframe src="https://try.dot.net/?fromGist=df44833326fcc575e8169fccb9d41fc7">
+    
+</iframe>]]></content><author><name></name></author><category term="App" /><summary type="html"><![CDATA[UWP란?]]></summary></entry><entry><title type="html">anime.js 활용</title><link href="http://localhost:4000/js/2023/01/14/anime.js-%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="anime.js 활용" /><published>2023-01-14T00:00:00+09:00</published><updated>2023-01-14T00:00:00+09:00</updated><id>http://localhost:4000/js/2023/01/14/anime.js%20%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2023/01/14/anime.js-%ED%99%9C%EC%9A%A9.html"><![CDATA[<div style="background:red; width:100%; height:100px; display:inline-block">
     <div clss="Anime__01" style="background:red; width:30%; height:100px; "></div>
 </div>
 
 <script>
 
-</script>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Animation Test</title><link href="http://localhost:4000/graphic/2023/01/01/animation-test.html" rel="alternate" type="text/html" title="Animation Test" /><published>2023-01-01T00:00:00+09:00</published><updated>2023-01-01T00:00:00+09:00</updated><id>http://localhost:4000/graphic/2023/01/01/animation-test</id><content type="html" xml:base="http://localhost:4000/graphic/2023/01/01/animation-test.html"><![CDATA[<html>
-  <head>
-  </head>
-  <body>
-    <div style="display:inline-block" class="rotate">rotate</div>
-    <script>
-        anime({
-      targets: '.rotate',
-      translateX: 250,
-      rotate: '1turn',
-      backgroundColor: 'rgb(100, 215, 155)',
-      loop:true,
-      duration: 1800
-      });
-      
-    </script>
-
-  </body>
-</html>]]></content><author><name></name></author><category term="Graphic" /><summary type="html"><![CDATA[rotate]]></summary></entry><entry><title type="html">Dom객체활용</title><link href="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Dom객체활용" /><published>2023-01-01T00:00:00+09:00</published><updated>2023-01-01T00:00:00+09:00</updated><id>http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html"><![CDATA[<html>
+</script>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Dom객체활용</title><link href="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html" rel="alternate" type="text/html" title="Dom객체활용" /><published>2023-01-01T00:00:00+09:00</published><updated>2023-01-01T00:00:00+09:00</updated><id>http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9</id><content type="html" xml:base="http://localhost:4000/js/2023/01/01/DOM%EA%B0%9D%EC%B2%B4%ED%99%9C%EC%9A%A9.html"><![CDATA[<html>
     <head>
         <script>
             var div;
@@ -129,7 +126,25 @@
         </script>
     </body>
 
-</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[예제 8장) 이것은 InnerHtml이다 확인 왼쪽정렬 가운데정렬 오른쪽정렬 1 2 3 예제 9-5) 마우스를 올려보세요 클릭해보세요 예제 9-7) HOME 1번 (선택 불가능) 2번 (선택 가능) 3번 (선택 불가능) 예제 9-8) event propagation 클릭 해보세요]]></summary></entry><entry><title type="html">Js6장</title><link href="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html" rel="alternate" type="text/html" title="Js6장" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/js6%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html"><![CDATA[<html>
+</html>]]></content><author><name></name></author><category term="JS" /><summary type="html"><![CDATA[예제 8장) 이것은 InnerHtml이다 확인 왼쪽정렬 가운데정렬 오른쪽정렬 1 2 3 예제 9-5) 마우스를 올려보세요 클릭해보세요 예제 9-7) HOME 1번 (선택 불가능) 2번 (선택 가능) 3번 (선택 불가능) 예제 9-8) event propagation 클릭 해보세요]]></summary></entry><entry><title type="html">Animation Test</title><link href="http://localhost:4000/graphic/2023/01/01/animation-test.html" rel="alternate" type="text/html" title="Animation Test" /><published>2023-01-01T00:00:00+09:00</published><updated>2023-01-01T00:00:00+09:00</updated><id>http://localhost:4000/graphic/2023/01/01/animation-test</id><content type="html" xml:base="http://localhost:4000/graphic/2023/01/01/animation-test.html"><![CDATA[<html>
+  <head>
+  </head>
+  <body>
+    <div style="display:inline-block" class="rotate">rotate</div>
+    <script>
+        anime({
+      targets: '.rotate',
+      translateX: 250,
+      rotate: '1turn',
+      backgroundColor: 'rgb(100, 215, 155)',
+      loop:true,
+      duration: 1800
+      });
+      
+    </script>
+
+  </body>
+</html>]]></content><author><name></name></author><category term="Graphic" /><summary type="html"><![CDATA[rotate]]></summary></entry><entry><title type="html">Js6장</title><link href="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html" rel="alternate" type="text/html" title="Js6장" /><published>2022-12-31T00:00:00+09:00</published><updated>2022-12-31T00:00:00+09:00</updated><id>http://localhost:4000/js/2022/12/31/js6%EC%9E%A5</id><content type="html" xml:base="http://localhost:4000/js/2022/12/31/js6%EC%9E%A5.html"><![CDATA[<html>
     <head>
     <script>
         function over(obj){
