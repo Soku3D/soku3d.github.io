@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-15T22:09:49+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">UWP 앱 만들기(1)</title><link href="http://localhost:4000/app/2023/01/15/UWP-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0(1).html" rel="alternate" type="text/html" title="UWP 앱 만들기(1)" /><published>2023-01-15T00:00:00+09:00</published><updated>2023-01-15T00:00:00+09:00</updated><id>http://localhost:4000/app/2023/01/15/UWP%20%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0(1)</id><content type="html" xml:base="http://localhost:4000/app/2023/01/15/UWP-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0(1).html"><![CDATA[<h1 id="uwp란">UWP란?</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-16T16:36:39+09:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Unreal Engine 에서 Tensorflow 사용하기</title><link href="http://localhost:4000/graphic/2023/01/16/unreal-engine-%EC%97%90%EC%84%9C-tensorflow-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.html" rel="alternate" type="text/html" title="Unreal Engine 에서 Tensorflow 사용하기" /><published>2023-01-16T00:00:00+09:00</published><updated>2023-01-16T00:00:00+09:00</updated><id>http://localhost:4000/graphic/2023/01/16/unreal%20engine%20%EC%97%90%EC%84%9C%20tensorflow%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0</id><content type="html" xml:base="http://localhost:4000/graphic/2023/01/16/unreal-engine-%EC%97%90%EC%84%9C-tensorflow-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.html"><![CDATA[<h1 id="tensorflow-설치">tensorflow 설치</h1>
+
+<p>언리얼 엔진에서 tensorflow를 사용하기 위해서는 우선 <a href="https://www.tensorflow.org/?hl=ko">tensorflow</a>를 다운받아야 한다.</p>
+
+<h1 id="프로젝트-폴더에-tensorflow-넣기">프로젝트 폴더에 tensorflow 넣기</h1>
+
+<p>다운 받은 tensorflow를 사용할 언리얼 엔진 프로젝트 폴더에</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p><img src="/assets/img/unreal_error.png" alt="이미지" /></p>]]></content><author><name></name></author><category term="Graphic" /><summary type="html"><![CDATA[tensorflow 설치]]></summary></entry><entry><title type="html">UWP 앱 만들기(1)</title><link href="http://localhost:4000/app/2023/01/15/UWP-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0(1).html" rel="alternate" type="text/html" title="UWP 앱 만들기(1)" /><published>2023-01-15T00:00:00+09:00</published><updated>2023-01-15T00:00:00+09:00</updated><id>http://localhost:4000/app/2023/01/15/UWP%20%EC%95%B1%20%EB%A7%8C%EB%93%A4%EA%B8%B0(1)</id><content type="html" xml:base="http://localhost:4000/app/2023/01/15/UWP-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0(1).html"><![CDATA[<h1 id="uwp란">UWP란?</h1>
 
 <p><a href="https://learn.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide">What’s a Universal Windows Platform (UWP) app?</a></p>
 
