@@ -2,7 +2,7 @@
 <nav class="top-nav">
     <div class="topNavContent">
         {% for site in site.data.navigation %}
-        <div class="menu">
+        <div class="categoryAnimTarget">
             <a href="{{site.link}}" {% if site.link== "/" %} id="home" {% endif %} {% if site.link == page.url %} class="current" {% endif %}>{{site.name}}</a>
             <ul id="subnav" class="hide">
                 {% for sublist in site.list %}
@@ -13,3 +13,30 @@
         {%endfor%}
     </div>
 </nav><hr>
+<script>
+    var categorys = document.getElementsByClassName("categoryAnimTarget");
+    
+    function animateCategory(scale, duration, elasticity, i) {
+          anime.remove(categorys[i]);
+        anime({
+            targets: categorys[i],
+            scale: scale,
+            duration: duration,
+            elasticity: elasticity
+        });
+    }
+    
+    function enter(i) {
+        animateCategory(1.2, 800, 1000, i);
+    }
+    
+    function leave(i) {
+        animateCategory(1.0, 400, 1000, i);
+    }
+    
+    for (var i = 0; i < categorys.length; i++) {
+        categorys[i].addEventListener('mouseenter', enter.bind(null, i), false);
+        categorys[i].addEventListener('mouseleave', leave.bind(null, i), false);
+    }
+    </script>
+    

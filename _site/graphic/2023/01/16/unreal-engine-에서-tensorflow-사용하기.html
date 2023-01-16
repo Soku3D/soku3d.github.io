@@ -29,28 +29,55 @@
 <nav class="top-nav">
     <div class="topNavContent">
         
-        <div name="Home">
+        <div name="Home" class="categoryAnimTarget">
             <a href=/  id="home"  >Home</a>
         </div>
         
-        <div name="Algorithms">
+        <div name="Algorithms" class="categoryAnimTarget">
             <a href=/category/Algorithms.html  >Algorithms</a>
         </div>
         
-        <div name="Graphic">
+        <div name="Graphic" class="categoryAnimTarget">
             <a href=/category/Graphic.html   class="current" >Graphic</a>
         </div>
         
-        <div name="AI">
+        <div name="AI" class="categoryAnimTarget">
             <a href=/category/AI.html  >AI</a>
         </div>
         
-        <div name="JS">
+        <div name="JS" class="categoryAnimTarget">
             <a href=/category/JS.html  >JS</a>
         </div>
         
     </div>
-</nav><hr>         
+</nav><hr>
+<script>
+var categorys = document.getElementsByClassName("categoryAnimTarget");
+
+function animateCategory(scale, duration, elasticity, i) {
+  	anime.remove(categorys[i]);
+    anime({
+        targets: categorys[i],
+        scale: scale,
+        duration: duration,
+        elasticity: elasticity
+    });
+}
+
+function enter(i) {
+    animateCategory(1.1, 800, 400, i);
+}
+
+function leave(i) {
+    animateCategory(1.0, 400, 400, i);
+}
+
+for (var i = 0; i < categorys.length; i++) {
+    categorys[i].addEventListener('mouseenter', enter.bind(null, i), false);
+    categorys[i].addEventListener('mouseleave', leave.bind(null, i), false);
+}
+</script>
+         
 
     <h1>Unreal Engine 에서 Tensorflow 사용하기</h1>
     <p style="text-align: end">16 Jan 2023</p>

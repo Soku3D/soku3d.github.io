@@ -39,14 +39,14 @@
 <nav class="top-nav">
     <div class="topNavContent">
         
-        <div class="menu">
+        <div class="categoryAnimTarget">
             <a href="/"  id="home"  >Home</a>
             <ul id="subnav" class="hide">
                 
             </ul>
         </div>
         
-        <div class="menu">
+        <div class="categoryAnimTarget">
             <a href="/category.html"  >Category</a>
             <ul id="subnav" class="hide">
                 
@@ -57,7 +57,7 @@
             </ul>
         </div>
         
-        <div class="menu">
+        <div class="categoryAnimTarget">
             <a href="/Tag.html"  >Tag</a>
             <ul id="subnav" class="hide">
                 
@@ -68,7 +68,7 @@
             </ul>
         </div>
         
-        <div class="menu">
+        <div class="categoryAnimTarget">
             <a href="/about.html"   class="current" >about</a>
             <ul id="subnav" class="hide">
                 
@@ -76,7 +76,34 @@
         </div>
         
     </div>
-</nav><hr>        
+</nav><hr>
+<script>
+    var categorys = document.getElementsByClassName("categoryAnimTarget");
+    
+    function animateCategory(scale, duration, elasticity, i) {
+          anime.remove(categorys[i]);
+        anime({
+            targets: categorys[i],
+            scale: scale,
+            duration: duration,
+            elasticity: elasticity
+        });
+    }
+    
+    function enter(i) {
+        animateCategory(1.2, 800, 1000, i);
+    }
+    
+    function leave(i) {
+        animateCategory(1.0, 400, 1000, i);
+    }
+    
+    for (var i = 0; i < categorys.length; i++) {
+        categorys[i].addEventListener('mouseenter', enter.bind(null, i), false);
+        categorys[i].addEventListener('mouseleave', leave.bind(null, i), false);
+    }
+    </script>
+            
 
 <div class="frontBlog">
   <div class="front-content">
