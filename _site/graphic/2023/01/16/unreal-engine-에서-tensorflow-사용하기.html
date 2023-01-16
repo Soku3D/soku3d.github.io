@@ -65,7 +65,8 @@
 
 <h2 id="buildcs-파일에-라이브러리-경로-알려주기">build.cs 파일에 라이브러리 경로 알려주기</h2>
 
-<p>[프로젝트이름]/Source/[프로젝트 이름].Build.cs 파일은 모듈을 불러와 주기 때문에 이곳에 라이브러리와 헤더파일의 경로를 알려주어야 한다.</p>
+<p>(프로젝트 이름)/Source/(프로젝트 이름).Build.cs 파일은 모듈을 불러와 주기 때문에 이곳에 라이브러리와 헤더파일의 경로를 알려주어야 한다.</p>
+
 <div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Copyright Epic Games, Inc. All Rights Reserved.</span>
 
 <span class="k">using</span> <span class="nn">UnrealBuildTool</span><span class="p">;</span>
@@ -93,8 +94,10 @@
 
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"tensorflow/c/c_api.h"</span><span class="cp">
 </span></code></pre></div></div>
+
 <p>와 같이 해주어야 하고 generated.h 보다 위에 include 해주어야 정상적으로 include 된다.</p>
 
+    <hr>
     <script src="https://utteranc.es/client.js"
     repo="Soku3D/comments"
     issue-term="pathname"

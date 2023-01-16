@@ -15,7 +15,8 @@ category: Graphic
 
 ## build.cs 파일에 라이브러리 경로 알려주기
 
-[프로젝트이름]/Source/[프로젝트 이름].Build.cs 파일은 모듈을 불러와 주기 때문에 이곳에 라이브러리와 헤더파일의 경로를 알려주어야 한다.
+(프로젝트 이름)/Source/(프로젝트 이름).Build.cs 파일은 모듈을 불러와 주기 때문에 이곳에 라이브러리와 헤더파일의 경로를 알려주어야 한다.
+
 ```c#
 // Copyright Epic Games, Inc. All Rights Reserved.
 
@@ -45,4 +46,5 @@ public class TestProject : ModuleRules
 ```c++
 #include "tensorflow/c/c_api.h"
 ```
+
 와 같이 해주어야 하고 generated.h 보다 위에 include 해주어야 정상적으로 include 된다.
