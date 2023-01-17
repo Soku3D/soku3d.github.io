@@ -94,27 +94,8 @@ for (var i = 0; i < categorys.length; i++) {
 
 <p>(프로젝트 이름)/Source/(프로젝트 이름).Build.cs 파일은 모듈을 불러와 주기 때문에 이곳에 라이브러리와 헤더파일의 경로를 알려주어야 한다.</p>
 
-<div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Copyright Epic Games, Inc. All Rights Reserved.</span>
+<script src="https://gist.github.com/Soku3D/b5bd80b4f5fff85085c13c36a73f9766.js"></script>
 
-<span class="k">using</span> <span class="nn">UnrealBuildTool</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">System.IO</span><span class="p">;</span>
-<span class="k">public</span> <span class="k">class</span> <span class="nc">TestProject</span> <span class="p">:</span> <span class="n">ModuleRules</span>
-<span class="p">{</span>
-	<span class="k">public</span> <span class="nf">TestProject</span><span class="p">(</span><span class="n">ReadOnlyTargetRules</span> <span class="n">Target</span><span class="p">)</span> <span class="p">:</span> <span class="k">base</span><span class="p">(</span><span class="n">Target</span><span class="p">)</span>
-	<span class="p">{</span>
-		<span class="kt">string</span> <span class="n">ThirdPartyPath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="nf">GetFullPath</span><span class="p">(</span> <span class="n">Path</span><span class="p">.</span><span class="nf">Combine</span><span class="p">(</span><span class="n">ModuleDirectory</span><span class="p">,</span> <span class="s">"../../ThirdParty/"</span><span class="p">));</span>
-		
-		<span class="n">PublicIncludePaths</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="nf">Combine</span><span class="p">(</span><span class="n">ModuleDirectory</span><span class="p">,</span> <span class="s">"../../ThirdParty/tensorflow/include"</span><span class="p">));</span>
-        <span class="n">PublicAdditionalLibraries</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="nf">Combine</span><span class="p">(</span><span class="n">ModuleDirectory</span><span class="p">,</span> <span class="s">"../../ThirdParty/tensorflow/lib"</span><span class="p">,</span> <span class="s">"tensorflow.lib"</span><span class="p">));</span>
-
-		<span class="n">PCHUsage</span> <span class="p">=</span> <span class="n">PCHUsageMode</span><span class="p">.</span><span class="n">UseExplicitOrSharedPCHs</span><span class="p">;</span>
-	
-		<span class="n">PublicDependencyModuleNames</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> <span class="s">"Core"</span><span class="p">,</span> <span class="s">"CoreUObject"</span><span class="p">,</span> <span class="s">"Engine"</span><span class="p">,</span> <span class="s">"InputCore"</span> <span class="p">});</span>
-
-		<span class="n">PrivateDependencyModuleNames</span><span class="p">.</span><span class="nf">AddRange</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span>  <span class="p">});</span>
-	<span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
 <p>완료했으면 Binaries/Win64폴더에 dll 파일을 넣고 빌드를 하면 라이브러리를 사용할 수 있다.</p>
 
 <p>단, 사용하기 위해서는 include의 경로를 잘 확인해 주어야 한다. 위의 경우에는 include 경로를 “../../ThirdParty/tensorflow/include” 로 설정했으므로 “c_api.h”를 include 하기 위해서는</p>
@@ -123,7 +104,7 @@ for (var i = 0; i < categorys.length; i++) {
 </span></code></pre></div></div>
 
 <p>와 같이 해주어야 하고 generated.h 보다 위에 include 해주어야 정상적으로 include 된다.</p>
-
+<br><br>
     <hr>
     <script src="https://utteranc.es/client.js"
     repo="Soku3D/comments"

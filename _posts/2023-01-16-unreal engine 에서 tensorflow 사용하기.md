@@ -17,28 +17,8 @@ category: Graphic
 
 (프로젝트 이름)/Source/(프로젝트 이름).Build.cs 파일은 모듈을 불러와 주기 때문에 이곳에 라이브러리와 헤더파일의 경로를 알려주어야 한다.
 
-```c#
-// Copyright Epic Games, Inc. All Rights Reserved.
+<script src="https://gist.github.com/Soku3D/b5bd80b4f5fff85085c13c36a73f9766.js"></script>
 
-using UnrealBuildTool;
-using System.IO;
-public class TestProject : ModuleRules
-{
-	public TestProject(ReadOnlyTargetRules Target) : base(Target)
-	{
-		string ThirdPartyPath = Path.GetFullPath( Path.Combine(ModuleDirectory, "../../ThirdParty/"));
-		
-		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "../../ThirdParty/tensorflow/include"));
-        PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "../../ThirdParty/tensorflow/lib", "tensorflow.lib"));
-
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
-
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
-	}
-}
-```
 완료했으면 Binaries/Win64폴더에 dll 파일을 넣고 빌드를 하면 라이브러리를 사용할 수 있다.
 
 단, 사용하기 위해서는 include의 경로를 잘 확인해 주어야 한다. 위의 경우에는 include 경로를 "../../ThirdParty/tensorflow/include" 로 설정했으므로 "c_api.h"를 include 하기 위해서는

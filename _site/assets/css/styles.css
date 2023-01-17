@@ -90,6 +90,15 @@ body {
   display: flex;
 }
 
+.spinanim {
+  animation: spin 10000ms infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .Listdiv {
   padding: 30px 0px;
 }

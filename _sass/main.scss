@@ -74,4 +74,12 @@ body {
   justify-content: center;
   height: 300px;
   display: flex;
+  
+}
+
+.spinanim{
+  animation:spin 10000ms infinite linear;
+}
+@keyframes spin {
+  100%{ transform: rotate(360deg); }
 }
